@@ -1,0 +1,27 @@
+:root {
+    //Font
+    --font-family-primary : "Roboto", sans-serif;
+    --font-size-heading-primary: 2rem;
+
+    //Color
+    --vh-color-primary: #0a6fc5;
+    --vh-color-secondary: #0c3762;
+    --vh-color-tertiary: #3a3939;
+    --vh-color-other: #6e6e6e;
+    --vh-color-utility: #264383;
+    --vh-color-negative: red;
+
+    --underline-button-color: rgba(73, 73, 73, 0.22);
+
+    //Grid
+    --vh-grid-columns: 12;
+    --vh-grid-gap: 1.5rem;
+    --vh-grid-column-gap: var(--vh-grid-gap);
+    --vh-grid-row-gap: var(--vh-grid-gap);
+
+    //Link
+    --vh-link-font-size: 1.3rem;
+
+    //Icon
+    --vh-icon-size: 3rem;
+}

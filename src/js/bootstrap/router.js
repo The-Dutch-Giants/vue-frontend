@@ -1,9 +1,9 @@
 import { createRouter, createWebHistory } from "vue-router";
 
 import Error from "@/js/components/Error.vue";
-import App from '@/js/components/App.vue';
 
 import Home from "@/js/components/route/Home.vue";
+import AppTemplate from '@/js/components/AppTemplate.vue';
 
 export default function (app) {
 
@@ -11,7 +11,7 @@ export default function (app) {
 
         {
             path: "/",
-            component: App,
+            component: AppTemplate,
             redirect: { name: "Home" },
             children: [
                 {

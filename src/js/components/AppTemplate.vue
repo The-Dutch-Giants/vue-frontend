@@ -1,6 +1,10 @@
 <template>
 
+    <Header />
 
+    <router-view />
+
+    <Footer />
 
 </template>
 
@@ -10,9 +14,9 @@ import { Vue, Options } from 'vue-class-component'
 
 export default Options({
 
-    name: 'Home',
+    name: 'AppTemplate',
 })(
-    class Home extends Vue {
+    class AppTemplate extends Vue {
 
     }
 )

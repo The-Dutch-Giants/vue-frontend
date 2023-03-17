@@ -1,9 +1,9 @@
 import { createRouter, createWebHistory } from "vue-router";
 
-import Error from "@/js/components/Error.vue";
+import Error from "@/js/organisms/Error.vue";
 
-import Home from "@/js/components/route/Home.vue";
-import AppTemplate from '@/js/components/AppTemplate.vue';
+import Home from "@/js/organisms/route/Home.vue";
+import AppTemplate from '@/js/organisms/AppTemplate.vue';
 
 export default function (app) {
 

@@ -1,6 +1,6 @@
 import { createApp } from 'vue'
 import '@/scss/app.scss'
-import App from '@/js/components/App.vue'
+import App from '@/js/organisms/App.vue'
 import bootstrap from '@/js/bootstrap/index.js';
 
 const run = async () => {

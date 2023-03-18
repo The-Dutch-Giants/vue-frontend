@@ -10,6 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "boxicons": "^2.1.4",
     "lodash": "^4.17.21",
     "sass": "^1.59.2",
     "vue": "^3.2.45",

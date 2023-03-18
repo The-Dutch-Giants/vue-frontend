@@ -1,0 +1,22 @@
+#quizcard {
+    padding: 30px;
+    display: flex;
+    gap: 30px;
+    height: 15vh;
+    max-height: none !important;
+
+    img {
+        height: 50px;
+        border-radius: 25px;
+        align-self: center;
+    }
+
+    div {
+        display: flex;
+        flex-direction: column;
+
+        a {
+            font-size: 14px;
+        }
+    }
+}

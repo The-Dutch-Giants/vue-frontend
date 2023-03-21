@@ -7,7 +7,7 @@
                 <img class="profile" src="@/img/pf-placeholder.png" alt="profile-picture">
                 <span>Team 5</span>
             </div>
-            <i class="bx bx-menu"></i>
+            <i @click="menu = !menu" class="bx bx-menu"></i>
         </section>
 
     </header>

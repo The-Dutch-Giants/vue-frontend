@@ -26,7 +26,7 @@
 <script>
 
 import { Vue, Options } from 'vue-class-component'
-import quizCard from '@/js/organisms/molecules/QuizCard.vue';
+import quizCard from '@/js/molecules/QuizCard.vue';
 
 export default Options({
 

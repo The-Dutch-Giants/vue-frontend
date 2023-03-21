@@ -1,6 +1,6 @@
 //Layout
 import { Header, Footer } from '@/js/organisms/layout';
-import { QuizCard } from '@/js/organisms/molecules';
+import { QuizCard } from '@/js/molecules';
 
 export default async function (app) {
 

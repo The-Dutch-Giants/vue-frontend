@@ -1,6 +1,6 @@
 <template>
     <div id="quizcard" class="card">
-        <img src="src/img/pf-placeholder.png" alt="profile pic">
+        <img src="../../img/pf-placeholder.png" alt="profile pic">
         <div>
             <span class="title">Quiz tijd!</span>
             <span>{{ txt }}</span>
@@ -28,4 +28,4 @@ export default Options({
 )
 
 </script>
-<style src="@/scss/organisms/molecules/quizcard.scss" lang="scss"></style>
+<style src="@/scss/molecules/quizcard.scss" lang="scss"></style>

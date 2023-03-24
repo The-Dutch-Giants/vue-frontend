@@ -40,6 +40,11 @@
         i {
             font-size: 24px;
             align-self: center;
+
+            &:hover {
+                cursor: pointer;
+                scale: 1.05;
+            }
         }
     }
 }

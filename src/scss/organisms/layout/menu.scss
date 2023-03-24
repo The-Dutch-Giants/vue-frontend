@@ -10,6 +10,7 @@
     justify-self: right;
     flex-direction: column;
     padding: 15px;
+    animation: slide .5s ease-in-out;
 
     a {
         color: #000;
@@ -18,5 +19,10 @@
         &:hover {
            scale: 1.05;
         }
+    }
+
+    @keyframes slide {
+        0% {width: 0}
+        100% {width: 15vw}
     }
 }

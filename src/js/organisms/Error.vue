@@ -5,7 +5,7 @@
         <div>
             <p>Neem contact op met </p>
             <a href="mailto: 1014698@hr.nl"> Rob de Willigen </a>
-            <p> wanneer deze melding zich blijft voordoen.</p>
+            <p>wanneer deze melding zich blijft voordoen.</p>
         </div>
     </div>
 

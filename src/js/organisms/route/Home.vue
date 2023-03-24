@@ -40,11 +40,13 @@ export default Options({
         choices = [
             {
                 label: "Ja",
-                value: "ja"
+                value: "ja",
+                isCorrect: true
             },
             {
                 label: "Nee",
-                value: "nee"
+                value: "nee",
+                isCorrect: false
             }
         ]
 

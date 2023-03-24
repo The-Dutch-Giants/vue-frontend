@@ -3,6 +3,7 @@ import { createRouter, createWebHistory } from "vue-router";
 import Error from "@/js/organisms/Error.vue";
 
 import Home from "@/js/organisms/route/Home.vue";
+import CorrectAnswer from "@/js/organisms/route/CorrectAnswer.vue";
 import AppTemplate from '@/js/organisms/AppTemplate.vue';
 
 export default function (app) {
@@ -19,6 +20,11 @@ export default function (app) {
                     path: "/",
                     component: Home,
                 },
+                {
+                    name: "CorrectAnswer.vue",
+                    path: '/correct-answer',
+                    component: CorrectAnswer,
+                }
             ]
         },
 

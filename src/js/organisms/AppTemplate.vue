@@ -1,9 +1,9 @@
 <template id="app-template">
 
-    <Header />
+    <Header @switchMenu="menu = !menu" />
 
     <router-view />
-    <Menu v-if="menu" />
+    <Menu v-if="menu"/>
 
 </template>
 
@@ -17,7 +17,7 @@ export default Options({
 })(
     class AppTemplate extends Vue {
 
-        menu = true;
+        menu = false;
     }
 )
 </script>

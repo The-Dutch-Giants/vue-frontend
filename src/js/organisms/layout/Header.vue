@@ -39,4 +39,4 @@ export default Options({
 
 </script>
 <style src="@/scss/organisms/layout/header.scss" lang="scss"></style>
-<style src="@/scss/organisms/molecules/menucard.scss" lang="scss"></style>
+<style src="@/scss/molecules/menucard.scss" lang="scss"></style>

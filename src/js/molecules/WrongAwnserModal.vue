@@ -2,7 +2,7 @@
     <div id="modal-container">
         <span>Helaas u heeft het verkeerde antwoord geselecteerd!</span> <br>
         <img class="modal-img" src="@/img/red-cross.png" alt="Wrong awnser image"> <br>
-        <button @click="$emit('closemodal')">Laat me de volgende vraag zien! </button>
+        <button class="modal-button" @click="$emit('closemodal')">Laat me de volgende vraag zien! </button>
     </div>
 </template>
 

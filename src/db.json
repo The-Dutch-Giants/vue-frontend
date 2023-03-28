@@ -1,0 +1,49 @@
+{
+	"data": {
+		"users": [
+			{
+				"id": 1,
+				"name": "Team 5",
+				"role": "admin",
+				"level": 3
+			},
+			{
+				"id": 2,
+				"name": "John doe",
+				"role": "user",
+				"level": 1
+			}
+		],
+		"questions": [
+			{
+				"label": "Is story telling een goede manier van berichten schrijven",
+				"options": [
+					{
+						"label": "Ja",
+						"value": "yes",
+						"isCorrect": true
+					},
+					{
+						"label": "Nee",
+						"value": "no",
+						"isCorrect": false
+					}
+				]
+			},
+			{
+				"label": "Wat is de beste manier om berichten te schrijven?",
+				"options": [
+					{
+						"label": "Keuze maken en 2 grote onderwerpen kiezen",
+						"isCorrect": true
+					},
+					{
+						"label": "Over jezelf beginnen en zien waar je uitkomt",
+						"isCorrect": false
+					}
+				]
+			}
+		]
+		
+	}
+}

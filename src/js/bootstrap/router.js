@@ -14,6 +14,7 @@ export default function (app) {
             path: "/",
             component: AppTemplate,
             redirect: { name: "Home" },
+            props: true,
             children: [
                 {
                     name: "Home",

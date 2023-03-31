@@ -1,6 +1,6 @@
 //Layout
 import { Header, Menu } from '@/js/organisms/layout';
-import { QuizCard } from '@/js/molecules';
+import { QuizCard, WrongAwnserModal } from '@/js/molecules';
 
 export default async function (app) {
 
@@ -10,4 +10,5 @@ export default async function (app) {
 
     // Molecules
     app.component(QuizCard.name, QuizCard);
+    app.component(WrongAwnserModal.name, WrongAwnserModal);
 }

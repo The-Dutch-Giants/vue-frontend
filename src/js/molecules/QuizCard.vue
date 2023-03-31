@@ -3,16 +3,21 @@
         <img src="../../img/pf-placeholder.png" alt="profile pic">
         <div>
             <span class="title">Quiz tijd!</span>
+
             <span id="txt">{{ txt }}</span>
 
             <a v-for="item in options" @click="submitAnswer(item)">{{ item.label }}</a>
         </div>
     </div>
+
+    <WrongAwnserModal v-if="showwrong" @closemodal="showwrong=false" />
+
 </template>
 
 <script>
 
 import { Vue, Options } from 'vue-class-component'
+import WrongAwnserModal from '@/js/molecules/WrongAwnserModal.vue';
 
 export default Options({
 
@@ -23,13 +28,15 @@ export default Options({
     }
 })(
     class QuizCard extends Vue {
+        showwrong = false;
+
 
         submitAnswer(item){
-
+            
             if(item.isCorrect) {
                 this.$router.push({path: 'correct-answer'})
             } else {
-                //TODO: notify user of wrong answer
+                this.showwrong = true;
             }
         }
     }

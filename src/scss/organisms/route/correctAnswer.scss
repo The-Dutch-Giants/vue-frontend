@@ -1,0 +1,56 @@
+#correct-answer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+
+    #succes-wrapper {
+        background-color: white;
+        height: 40vh; width: 40vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 40px;        
+    }
+    
+    #succes-wrapper :nth-child(even) {
+        padding-top: 5vh;
+    }
+}
+
+#confetti-wrapper {
+    overflow: hidden;
+
+    .confetti {
+        position: absolute;
+        top: -10%; 
+    }
+
+    $confetti-colors: (#eba1aa, #f5d280, #f1bea7, #adc3ff, #ffa169);
+
+    @for $i from 0 to 200 {
+        $width: random(30);
+        $left: random(85);
+        $rotate: random() * 360;
+
+        .confetti-#{$i} {
+            display: initial;
+            position: absolute;
+            background-color: nth($confetti-colors, random(5));
+            left: unquote($left + "%");
+            width: #{$width}px;
+            height: #{$width * 0.4}px;
+
+            transform: rotate(#{random() * 360}deg);
+            animation: falling-#{$i} unquote(3 + random() + "s") unquote(random() + "s") forwards infinite;
+        }
+
+        @keyframes falling-#{$i} {
+            100% {
+                top: 105%;
+                left: unquote(random(13) + $left + "%");
+            }
+        }
+    }
+}

@@ -2,10 +2,10 @@
     <header id="header-view" >
 
         <img src="@/img/placeholder-image.png" alt="Virtuele-helden Logo">
-        <section >
+        <section>
             <div class="header-item" @mouseover="hover = true" >
                 <img class="profile" src="@/img/pf-placeholder.png" alt="profile-picture"> 
-                <span>Team 5</span>
+                <span>{{ data.users[0].name }}</span>
             </div>
             <i @click="$emit('switchMenu')" class="bx bx-menu"></i>
         </section>
@@ -24,14 +24,19 @@
 <script>
 
 import { Vue, Options } from 'vue-class-component'
+import data from "@/db.json"
 
 export default Options({
 
-    name: 'Header'
+    name: 'Header',
+    emits: [
+        'switchMenu',
+    ]
     })(
         class Header extends Vue {
             hover = false;
 
+            data = data.data
         }
 )
 

@@ -7,12 +7,12 @@
                 <p>Beantwoord de volgende vragen en kom erachter</p>
             </div>
 
-            <quiz-card txt="Is storytelling een goede manier om berichten te schrijven?"
-                       :options="choices" />
+            <quiz-card :txt="data.questions[0].label"
+                       :options="data.questions[0].options" />
         </section>
         <div class="card shadow">
             <div>
-                <span>level 1</span>
+                <span>level {{ data.users[0].level }}</span>
                 <div>
                     <span>0</span>
                     <i class="bx bx-star"/>
@@ -27,6 +27,7 @@
 
 import { Vue, Options } from 'vue-class-component'
 import quizCard from '@/js/molecules/QuizCard.vue';
+import data from "@/db.json"
 
 export default Options({
 
@@ -36,19 +37,7 @@ export default Options({
     }
 })(
     class Home extends Vue {
-
-        choices = [
-            {
-                label: "Ja",
-                value: "ja",
-                isCorrect: true
-            },
-            {
-                label: "Nee",
-                value: "nee",
-                isCorrect: false
-            }
-        ]
+        data = data.data
 
     }
 )
